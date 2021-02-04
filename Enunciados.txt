@@ -1,0 +1,32 @@
+TP 1
+
+Entregar un notebook que contenga el código y las explicaciones/justificaciones necesarias para las siguientes tareas:
+
+1. Descargar los 27 capítulos del libro "The little prince (Antoine de Saint Exupéry)" a partir de la siguiente url: http://www.angelfire.com/hi/littleprince/frames.html
+2. Identificar las stopwords particulares para este texto. Justificar.
+3. Eliminar ruido, tokenizar y normalizar el texto descargado con las tareas que considere convenientes.
+4. Presentar un gráfico con la dispersión de las palabras little, prince, sheep, planet, astronomer, king, rose. ¿Puede sacar alguna conclusión a partir de este gráfico?
+
+TP2
+
+Tomar 10 noticias de un diario (o blog) en inglés y 10 noticias de un diario (o blog) en español.
+Identificar las entidades nombradas con SpaCy de cada uno de los 20 documentos e identificar, de acuerdo a la tabla de entidades vista en la clase:
+1) entidades reconocidas correctamente
+2) entidades reconocidas incorrectamente
+3) entidades no reconocidas
+
+Entregar un notebook con el código utilizado para la tarea, y el análisis realizado
+
+TP3
+
+Descargar el siguiente dataset:
+
+http://www.cs.cornell.edu/people/pabo/movie-review-data/review_polarity.tar.gz
+
+1. Escribir un Pipeline que permita clasificar las reviews de las películas como positivas o negativas.
+2. Buscar una buena configuración de hiperparámetros para el clasificador elegido utilizando grid search.
+3. Evaluar la performance del clasificador utilizando la técnica de hold out (75/25)
+4. Evaluar la performance del clasificador utilizando validación cruzada.
+5. Analizar los resultados obtenidos
+
+Nota: para cargar documentos de texto con categorías, scikit-learn provee el método load_files(data_folder), que asume que dentro de "data_folder" hay una carpeta por cada clase posible, y dentro de esa carpeta se encuentran los documentos de texto plano
